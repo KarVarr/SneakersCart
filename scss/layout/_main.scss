@@ -5,10 +5,10 @@
   position: relative;
   &::after {
     content: '';
-    width: 300px;
-    height: 50px;
+    width: 40rem;
+    height: 5rem;
     border-radius: 50%;
-    background-color: var(--color-black-opacity);
+    background-color: rgba($color: #000000, $alpha: 0.6);
     position: absolute;
     bottom: -15%;
     left: 50%;
@@ -19,31 +19,8 @@
     animation: shadow 60s ease infinite;
   }
   .img__sneakers {
-    position: relative;
     animation: sneakers 60s ease infinite;
     z-index: 5;
     /* filter: drop-shadow(0 15px 40px var(--color-black-opacity)); */
-  }
-
-  .img__title {
-    display: flex;
-    padding: 1px;
-    font-size: 202px;
-    font-family: var(--font-mono);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-text-stroke: 4px var(--color-white);
-    color: transparent;
-    mix-blend-mode: normal;
-    z-index: 1;
-    div {
-      -webkit-text-stroke: 4px var(--color-white);
-      color: transparent;
-      mix-blend-mode: normal;
-      position: relative;
-      z-index: 10;
-    }
   }
 }

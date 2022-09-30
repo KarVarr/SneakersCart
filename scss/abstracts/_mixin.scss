@@ -18,3 +18,10 @@
     }
   }
 }
+
+@mixin textGame {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: 'Silkscreen', cursive;
+  text-transform: uppercase;
+}

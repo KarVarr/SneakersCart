@@ -1,0 +1,49 @@
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Silkscreen', cursive;
+
+.header__text--left {
+  p {
+    @include textGame;
+  }
+}
+
+.img__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+  font-size: 23rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 4px $color-white;
+  color: transparent;
+  mix-blend-mode: normal;
+  z-index: 1;
+  div {
+    -webkit-text-stroke: 4px $color-white;
+    color: transparent;
+    mix-blend-mode: normal;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.footer__price {
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 900;
+  }
+  p {
+    font-size: 2rem;
+    font-family: monospace, sans-serif;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+.footer__buy {
+  p {
+    @include textGame;
+  }
+}
