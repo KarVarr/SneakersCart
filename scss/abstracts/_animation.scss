@@ -1,0 +1,17 @@
+@keyframes shadow {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 200px;
+  }
+}
+
+@keyframes sneakers {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}

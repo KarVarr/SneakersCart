@@ -1,0 +1,49 @@
+.main__img {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+  &::after {
+    content: '';
+    width: 300px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-black-opacity);
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    filter: blur(20px);
+    animation: shadow 60s ease infinite;
+  }
+  .img__sneakers {
+    position: relative;
+    animation: sneakers 60s ease infinite;
+    z-index: 5;
+    /* filter: drop-shadow(0 15px 40px var(--color-black-opacity)); */
+  }
+
+  .img__title {
+    display: flex;
+    padding: 1px;
+    font-size: 202px;
+    font-family: var(--font-mono);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 4px var(--color-white);
+    color: transparent;
+    mix-blend-mode: normal;
+    z-index: 1;
+    div {
+      -webkit-text-stroke: 4px var(--color-white);
+      color: transparent;
+      mix-blend-mode: normal;
+      position: relative;
+      z-index: 10;
+    }
+  }
+}

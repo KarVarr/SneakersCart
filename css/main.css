@@ -1,0 +1,246 @@
+@-webkit-keyframes shadow {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 200px;
+  }
+}
+@keyframes shadow {
+  0% {
+    width: 300px;
+  }
+  50% {
+    width: 200px;
+  }
+}
+@-webkit-keyframes sneakers {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes sneakers {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+body {
+  color: #fff;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.container {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: url("../cursors/Pointer_gauntlethq_off_32x32.webp"), auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 16px;
+  -ms-text-size-adjust: 16px;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 45%;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]:hover,
+input[type=number]:focus {
+  -moz-appearance: number-input;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+}
+
+.main__header {
+  display: flex;
+  justify-content: space-between;
+}
+.main__header .header__text--left .header__text--left > p {
+  /* -webkit-text-stroke: 1px var(--color-white); */
+  /* background: var(--color-black);
+      color: var(--color-black);
+      mix-blend-mode: multiply; */
+}
+.main__header .header__text--right .social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main__header .header__text--right .img-social {
+  max-width: 20px;
+  filter: invert(5);
+}
+
+.main__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__footer .footer__price {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__footer .footer__price p {
+  font-family: var(--font-mono);
+  line-height: 1.8;
+}
+.main__footer .footer__price h2 {
+  font-family: var(--font-mono);
+}
+.main__footer .footer__buy {
+  text-transform: var(--upper);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.item {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.item .item__main {
+  margin: 25px 0;
+  padding: 30px 200px;
+  border-radius: 40px;
+  box-shadow: 0 10px 30px var(--color-black-opacity);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  ); */
+  /* background-color: #041c7b;
+  background-image: linear-gradient(
+    43deg,
+    #041c7b 0%,
+    #212fb3 52%,
+    #5e0c92 100%
+  ); */
+  background-color: #2f135b;
+  background-image: linear-gradient(43deg, #2f135b 0%, #342f6c 43%, #21b7d9 100%);
+  z-index: 5;
+}
+
+.main__img {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+.main__img::after {
+  content: "";
+  width: 300px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--color-black-opacity);
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  filter: blur(20px);
+  -webkit-animation: shadow 60s ease infinite;
+          animation: shadow 60s ease infinite;
+}
+.main__img .img__sneakers {
+  position: relative;
+  -webkit-animation: sneakers 60s ease infinite;
+          animation: sneakers 60s ease infinite;
+  z-index: 5;
+  /* filter: drop-shadow(0 15px 40px var(--color-black-opacity)); */
+}
+.main__img .img__title {
+  display: flex;
+  padding: 1px;
+  font-size: 202px;
+  font-family: var(--font-mono);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: 4px var(--color-white);
+  color: transparent;
+  mix-blend-mode: normal;
+  z-index: 1;
+}
+.main__img .img__title div {
+  -webkit-text-stroke: 4px var(--color-white);
+  color: transparent;
+  mix-blend-mode: normal;
+  position: relative;
+  z-index: 10;
+}

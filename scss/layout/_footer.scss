@@ -1,0 +1,23 @@
+.main__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .footer__price {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    p {
+      font-family: var(--font-mono);
+      line-height: 1.8;
+    }
+    h2 {
+      font-family: var(--font-mono);
+    }
+  }
+  .footer__buy {
+    text-transform: var(--upper);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+}
