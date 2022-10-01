@@ -34,4 +34,49 @@
 
     z-index: 5;
   }
+
+  .bioAdidas {
+    background-color: #c9c9c9;
+    background-image: linear-gradient(
+      136deg,
+      #c9c9c9 5%,
+      #cadecb 39%,
+      #ff0041 82%
+    );
+  }
+
+  .ballen {
+    background-color: #f7e1e0;
+    background-image: linear-gradient(170deg, #f7e1e0 0%, #ac2123 100%);
+  }
+
+  .zombi {
+    background: #0b486b;
+    background: linear-gradient(to right, #f56217, #0b486b);
+  }
+
+  .dagon {
+    background-color: #4d0950;
+    background-image: linear-gradient(
+      135deg,
+      #4d0950 11%,
+      #0b6d8b 61%,
+      #2bff88 97%
+    );
+  }
+
+  .abc {
+    background-color: #fd7a39;
+    background-image: linear-gradient(
+      323deg,
+      #fd7a39 9%,
+      #51f9f9 50%,
+      #ffdc87 100%
+    );
+  }
+
+  .stone {
+    background-color: #f5c5aa;
+    background-image: linear-gradient(270deg, #f5c5aa 9%, #4d4d50 67%);
+  }
 }
