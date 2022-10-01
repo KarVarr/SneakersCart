@@ -2,8 +2,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
+  @include respond (phone) {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
   .footer__price {
-    max-width: 60rem;
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -14,7 +20,7 @@
     gap: 1rem;
   }
   .footer__buy {
-    text-transform: var(--upper);
+    text-transform: uppercase;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
     &:hover {

@@ -17,6 +17,12 @@
       @content;
     }
   }
+  //1400px
+  @if ($breakpoint == wide) {
+    @media only screen and(max-width: 87.5em) {
+      @content;
+    }
+  }
 }
 
 @mixin textGame {

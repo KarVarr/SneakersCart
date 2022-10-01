@@ -1,26 +1,14 @@
 .item {
-  max-width: 140rem;
+  //max-width: 140rem;
   margin: 0 auto;
+  max-height: 100vh;
   position: relative;
   z-index: 5;
-  &::after {
-    content: '';
-    width: 120rem;
-    height: 5rem;
-    border-radius: 30%;
-    background-color: $color-black-3;
-    filter: blur(2rem);
-    position: absolute;
-    bottom: -3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
+
   .item__main {
-    margin: 3% 0;
+    margin: 3% 5%;
     padding: 3rem 20rem;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px var(--color-black-opacity);
+    box-shadow: 0 1rem 3rem $color-black-6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -33,6 +21,13 @@
     );
 
     z-index: 5;
+    overflow: hidden;
+    @include respond(wide) {
+      padding: 3rem;
+    }
+  }
+  .swiper-slide {
+    overflow: hidden;
   }
 
   .bioAdidas {

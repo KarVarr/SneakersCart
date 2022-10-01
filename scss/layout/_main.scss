@@ -8,6 +8,14 @@
   position: relative;
   display: grid;
   place-items: center;
+
+  @include respond(tablet) {
+    min-height: 75vh;
+  }
+  @include respond(phone) {
+    max-height: 98vh;
+  }
+
   &::after {
     content: '';
     width: 50rem;
@@ -22,12 +30,16 @@
 
     filter: blur(20px);
     animation: shadow 60s ease infinite;
+    @include respond(tablet) {
+      display: none;
+    }
   }
   .img__sneakers {
     animation: sneakers 60s ease infinite;
     z-index: 5;
-    max-width: 90%;
+    max-width: 75%;
+    @include respond(wide) {
+      max-width: 90%;
+    }
   }
-
-  
 }
