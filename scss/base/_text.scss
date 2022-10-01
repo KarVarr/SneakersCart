@@ -1,5 +1,7 @@
 // font-family: 'Raleway', sans-serif;
 // font-family: 'Silkscreen', cursive;
+//font-family: 'Monoton', cursive;
+
 
 .header__text--left {
   p {
@@ -17,28 +19,33 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-text-stroke: 4px $color-white;
+  -webkit-text-stroke: 2px $color-white;
   color: transparent;
-  mix-blend-mode: normal;
+  mix-blend-mode: difference;
   z-index: 1;
-  div {
-    -webkit-text-stroke: 4px $color-white;
-    color: transparent;
-    mix-blend-mode: normal;
-    position: relative;
-    z-index: 10;
-  }
+//   div {
+//     -webkit-text-stroke: 4px $color-white;
+//     color: transparent;
+//     mix-blend-mode: normal;
+//     position: relative;
+//     z-index: 10;
+//   }
 }
 
 .footer__price {
-  h2 {
-    font-size: 2.4rem;
-    font-weight: 900;
-  }
+   h2 {
+      font-size: 3rem;
+      font-family: $color-white;
+      font-family: 'Monoton', cursive;
+      font-weight: normal;
+      letter-spacing: 1rem;
+    }
   p {
     font-size: 2rem;
     font-family: monospace, sans-serif;
-    color: rgba(255, 255, 255, 0.4);
+    color: $color-white-4;
+      line-height: 1.8;
+
   }
 }
 

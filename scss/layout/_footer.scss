@@ -3,21 +3,25 @@
   justify-content: space-between;
   align-items: center;
   .footer__price {
-    max-width: 600px;
+    max-width: 60rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    p {
-      font-family: var(--font-mono);
-      line-height: 1.8;
-    }
-    h2 {
-      font-family: var(--font-mono);
-    }
+    gap: 1rem;
+  }
+  .price__rating {
+    color: $color-white-4;
+    display: flex;
+    gap: 1rem;
   }
   .footer__buy {
     text-transform: var(--upper);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+    &:hover {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    }
+    p {
+      cursor: pointer;
+    }
   }
 }

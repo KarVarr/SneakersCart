@@ -1,17 +1,17 @@
 @-webkit-keyframes shadow {
   0% {
-    width: 300px;
+    width: 50rem;
   }
   50% {
-    width: 200px;
+    width: 20rem;
   }
 }
 @keyframes shadow {
   0% {
-    width: 300px;
+    width: 50rem;
   }
   50% {
-    width: 200px;
+    width: 20rem;
   }
 }
 @-webkit-keyframes sneakers {
@@ -19,7 +19,7 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
   }
 }
 @keyframes sneakers {
@@ -27,7 +27,7 @@
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-20deg);
+    transform: rotate(-10deg);
   }
 }
 body {
@@ -40,7 +40,7 @@ body {
 
 .container {
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 *,
@@ -49,7 +49,6 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: url("../cursors/Pointer_gauntlethq_off_32x32.webp"), auto;
 }
 
 h1,
@@ -139,27 +138,24 @@ menu {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -webkit-text-stroke: 4px #fff;
+  -webkit-text-stroke: 2px #fff;
   color: transparent;
-  mix-blend-mode: normal;
+  mix-blend-mode: difference;
   z-index: 1;
-}
-.img__title div {
-  -webkit-text-stroke: 4px #fff;
-  color: transparent;
-  mix-blend-mode: normal;
-  position: relative;
-  z-index: 10;
 }
 
 .footer__price h2 {
-  font-size: 2.4rem;
-  font-weight: 900;
+  font-size: 3rem;
+  font-family: #fff;
+  font-family: "Monoton", cursive;
+  font-weight: normal;
+  letter-spacing: 1rem;
 }
 .footer__price p {
   font-size: 2rem;
   font-family: monospace, sans-serif;
   color: rgba(255, 255, 255, 0.4);
+  line-height: 1.8;
 }
 
 .footer__buy p {
@@ -169,24 +165,35 @@ menu {
   text-transform: uppercase;
 }
 
+.swiper-button-next {
+  padding: 20rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  right: -12%;
+  top: 30%;
+}
+
+.swiper-button-prev {
+  padding: 20rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  left: -12%;
+  top: 30%;
+}
+
 .main__header {
   display: flex;
   justify-content: space-between;
-}
-.main__header .header__text--left .header__text--left > p {
-  /* -webkit-text-stroke: 1px var(--color-white); */
-  /* background: var(--color-black);
-      color: var(--color-black);
-      mix-blend-mode: multiply; */
+  align-items: center;
 }
 .main__header .header__text--right .social {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
 }
-.main__header .header__text--right .img-social {
-  max-width: 20px;
-  filter: invert(5);
+.main__header .header__text--right .social i {
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .main__footer {
@@ -195,50 +202,55 @@ menu {
   align-items: center;
 }
 .main__footer .footer__price {
-  max-width: 600px;
+  max-width: 60rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
 }
-.main__footer .footer__price p {
-  font-family: var(--font-mono);
-  line-height: 1.8;
-}
-.main__footer .footer__price h2 {
-  font-family: var(--font-mono);
+.main__footer .price__rating {
+  color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  gap: 1rem;
 }
 .main__footer .footer__buy {
   text-transform: var(--upper);
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.main__footer .footer__buy:hover {
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.main__footer .footer__buy p {
   cursor: pointer;
 }
 
 .item {
-  max-width: 1400px;
+  max-width: 140rem;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+.item::after {
+  content: "";
+  width: 120rem;
+  height: 5rem;
+  border-radius: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+  filter: blur(2rem);
+  position: absolute;
+  bottom: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 .item .item__main {
-  margin: 25px 0;
-  padding: 30px 200px;
+  margin: 3% 0;
+  padding: 3rem 20rem;
   border-radius: 40px;
   box-shadow: 0 10px 30px var(--color-black-opacity);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  ); */
-  /* background-color: #041c7b;
-  background-image: linear-gradient(
-    43deg,
-    #041c7b 0%,
-    #212fb3 52%,
-    #5e0c92 100%
-  ); */
   background-color: #2f135b;
   background-image: linear-gradient(43deg, #2f135b 0%, #342f6c 43%, #21b7d9 100%);
   z-index: 5;
@@ -252,7 +264,7 @@ menu {
 }
 .main__img::after {
   content: "";
-  width: 40rem;
+  width: 50rem;
   height: 5rem;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -269,5 +281,5 @@ menu {
   -webkit-animation: sneakers 60s ease infinite;
           animation: sneakers 60s ease infinite;
   z-index: 5;
-  /* filter: drop-shadow(0 15px 40px var(--color-black-opacity)); */
+  max-width: 90%;
 }

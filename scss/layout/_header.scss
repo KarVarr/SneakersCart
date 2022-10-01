@@ -1,23 +1,17 @@
 .main__header {
   display: flex;
   justify-content: space-between;
-  .header__text--left {
-    .header__text--left > p {
-      /* -webkit-text-stroke: 1px var(--color-white); */
-      /* background: var(--color-black);
-          color: var(--color-black);
-          mix-blend-mode: multiply; */
-    }
-  }
+  align-items: center;
+
   .header__text--right {
     .social {
       display: flex;
       align-items: center;
-      gap: 20px;
-    }
-    .img-social {
-      max-width: 20px;
-      filter: invert(5);
+      gap: 2rem;
+      i {
+        font-size: 2rem;
+        cursor: pointer;
+      }
     }
   }
 }

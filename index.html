@@ -8,8 +8,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Silkscreen&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Raleway:wght@400;700;900&family=Silkscreen&display=swap"
       rel="stylesheet"
+    />
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/74199ae25c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      href="images/game-shoes-sneakers-svgrepo-com.svg"
+      type="image/x-icon"
+    />
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <!-- TITILE -->
     <title>Sneakers Cart</title>
@@ -21,59 +36,73 @@
     <div class="container">
       <div class="item">
         <!-- HEADER -->
-
-        <!-- MAIN -->
-        <div class="item__main">
-          <div class="main__header">
-            <div class="header__text--left">
-              <p>shoes from the future</p>
-            </div>
-            <div class="header__text--right">
-              <div class="social">
-                <a href="#"
-                  ><img
-                    class="img-social"
-                    src="images/facebook.svg"
-                    alt="social"
-                /></a>
-                <a href="#"
-                  ><img
-                    class="img-social"
-                    src="images/instagram.svg"
-                    alt="social"
-                /></a>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- START SLIDER -->
+              <div class="item__main">
+                <div class="main__header">
+                  <div class="header__text--left">
+                    <p>shoes from the future</p>
+                  </div>
+                  <div class="header__text--right">
+                    <div class="social">
+                      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ------------------- -->
+                <div class="main__img">
+                  <img
+                    class="img__sneakers"
+                    src="images/ballen.png"
+                    alt="sneakers"
+                  />
+                  <div class="img__text--transparent">
+                    <h2 class="img__title">shishido</h2>
+                  </div>
+                </div>
+                <!-- ------------------- -->
+                <div class="main__footer">
+                  <div class="footer__price">
+                    <h2><i class="fa-solid fa-dollar-sign"></i> 4 749</h2>
+                    <div class="price__rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                      ðə bɛst ˈsniːkəz ɑː səʊld frɒm ðə ˈfjuːʧə təˈdeɪ ænd
+                      ˈəʊnli wɪð ʌs
+                    </p>
+                  </div>
+                  <div class="footer__buy">
+                    <p>buy now</p>
+                  </div>
+                </div>
               </div>
+
+              <!-- END SLIDER -->
             </div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
           </div>
-          <!-- ------------------- -->
-          <div class="main__img">
-            <img class="img__sneakers" src="images/ballen.png" alt="sneakers" />
-            <div class="img__text--transparent">
-              <h2 class="img__title">
-                sh
-                <div>ishi</div>
-                do
-              </h2>
-            </div>
-          </div>
-          <!-- ------------------- -->
-          <div class="main__footer">
-            <div class="footer__price">
-              <h2>$749</h2>
-              <span>⭐⭐⭐⭐⭐</span>
-              <p>
-                ðə bɛst ˈsniːkəz ɑː səʊld frɒm ðə ˈfjuːʧə təˈdeɪ ænd ˈəʊnli wɪð ʌs
-              </p>
-            </div>
-            <div class="footer__buy">
-              <p>buy now</p>
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
+        <!-- MAIN -->
+
         <!-- FOOTER -->
       </div>
     </div>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
