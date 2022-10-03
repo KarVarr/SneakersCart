@@ -1,14 +1,12 @@
 .item {
-  //max-width: 140rem;
   margin: 0 auto;
-  max-height: 100vh;
   position: relative;
   z-index: 5;
 
   .item__main {
-    margin: 3% 5%;
+    margin: 1% 1% 3% 1%;
     padding: 3rem 20rem;
-    box-shadow: 0 1rem 3rem $color-black-6;
+    box-shadow: 0 5rem 6rem -1rem $color-black-6;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -25,9 +23,9 @@
     @include respond(wide) {
       padding: 3rem;
     }
-  }
-  .swiper-slide {
-    overflow: hidden;
+    @include respond(phone) {
+      margin: 2.5% 2.5% 4% 2.5%;
+    }
   }
 
   .bioAdidas {

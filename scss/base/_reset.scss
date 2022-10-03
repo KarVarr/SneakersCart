@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  display: none;
+}
 h1,
 h2,
 h3,
